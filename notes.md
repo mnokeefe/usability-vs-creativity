@@ -48,10 +48,13 @@ UX gets users involved, but people can only give you feedback based on what they
 
 Understand the purpose of the product
     - User journey
+    - Understand what's important
 
 Understand what makes something usable
-    - Car design change
-    - Steering wheel and controls stay the same
+    - Car design: Steering wheel and controls stay the same
+    - Book: Contents at the front, content in the middle, index at the end
+
+Experiment with everything else
 
 Obvious always wins - show things, don't hide them
 
@@ -59,7 +62,8 @@ Group similar tasks - edit, navigate etc.
 
 Experiment - go too far, multiple versions, do the obvious one and throw it away
 
-Test concepts with users, don't ask them to fix it, just see if they can use it
+Test concepts with users, don't ask them to fix it, just see if they can use it:
+“If I had asked people what they wanted, they would have said faster horses.” - Not actually Henry Ford
 
 ## Proof
 Usability is in the detail, usability is in the journey
