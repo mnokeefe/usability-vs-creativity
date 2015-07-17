@@ -7,8 +7,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Usability kills creativity</title>
     
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
     <!--
         
         Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
@@ -24,7 +25,8 @@
         When creating your own presentation get rid of this file. Start from scratch, it's fun!
         
     -->
-    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress.css" rel="stylesheet" />
+    <link href="css/slides.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -98,74 +100,99 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <h1>“Usability kills creativity”</h1>
+    <div id="intro" class="step slide" data-x="-1500" data-y="-1500">
+        <h1>Usability kills creativity</h1>
     </div>
 
-    <div class="step slide" data-x="0" data-y="-1500">
-        <p>Creativity: the use of imagination or original ideas to create something; inventiveness.</p>
-        <p>Usablity: the ease of use and learnability of a human-made object.</p>
+    <div id="define" class="step slide" data-x="0" data-y="-1500">
+        <p><strong>Creativity:</strong> the use of imagination or original ideas to create something; inventiveness.</p>
+        <p><strong>Usability:</strong> the ease of use and learnability of a human-made object.</p>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
+    <div id="objective" class="step slide" data-x="1500" data-y="-1500">
         <p>Create something <strong>imaginative</strong>, <strong>original</strong> and <strong>inventive</strong> that's <strong>easy to learn and use.</strong></p>
     </div>
 
     <!-- Problem -->
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <small>The problem:</small>
         <h1>Familiarity</h1>
-        <p>easy to learn and use</p>
-        <p>unimaginative, unoriginal, uninventive</p>
+        <ul>
+            <li>Easy to learn and use;</li>
+            <li>Unimaginative, unoriginal, uninventive.</li>
+        </ul>
     </div>
 
     <!-- Proposition -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="3">
+
+    <!-- Don't start like this -->
+    <div id="sketch" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="3">
         <img src="images/darren-sketch.jpg">
     </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>Obvious always wins</p>
+    <!-- focus on content first, user journey first -->
+    <div id="content-first" class="step standard" data-x="3500" data-y="-2100">
+        <h1>Think in journeys</h1>
     </div>
 
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>Search form</p>
+    <div id="throw" class="step standard" data-x="3500" data-y="-1200">
+        <h1>Content first</h1>
     </div>
 
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>Main nav</p>
+    <div id="think" class="step standard" data-x="3500" data-y="-300">
+        <h1>Throw away the first version</h1>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>Filters/dropdown</p>
+    <div id="search" class="step image" data-x="2825" data-y="0" data-z="-3000" data-scale="1">
+        <img src="images/search.jpg">
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>Group similar controls - navigate, edit, filter etc.</p>
+    <div id="nav" class="step image" data-x="4825" data-y="0" data-z="-3000" data-scale="1">
+        <img src="images/nav.jpg">
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>Focus on the content first</p>
-        <span>Controls come second</span>
+    <div id="filters" class="step image" data-x="6825" data-y="0"  data-z="-3000" data-scale="1">
+        <img src="images/dropdown.jpg">
     </div>
 
-    <div id="asd" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>Throw away the first version</p>
+    <!-- for usability, obvious always wins -->
+    <div id="obvious" class="step standard" data-x="3500" data-y="1000" data-rotate="180" data-scale="6">
+        <h1>Obvious always wins</h1>
     </div>
+
+    <div id="ford" class="step" data-x="4000" data-y="3000" data-rotate="20" data-scale="4">
+        <q>“If I had asked people what they wanted, they would have said faster horses.”</q>
+        <cite>Not actually Henry Ford</cite>
+    </div>
+
 
     <!-- Proof -->
-
-    <!-- Do you think car designers start with the steering wheel? -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p>Car dashboards</p>
+    <div id="churches" class="step image" data-x="7000" data-y="2000">
+        <img src="images/churches.png">
     </div>
 
     <!-- Do you think publishers spend time deciding where to place the index? -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p>Books</p>
+    <div id="contents" class="step image" data-x="7000" data-y="3000">
+        <img src="images/contents.jpg">
     </div>
 
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <!-- Do you think car designers start with the steering wheel? -->
+    <div id="cars" class="step image" data-x="7000" data-y="4000">
+        <img src="images/cars.png">
+    </div>
+
+    <div id="concept" class="step image" data-x="7000" data-y="5000">
+        <img src="images/concept-car.jpg">
+    </div>
+
+    <div id="conclusion" class="step" data-x="11000" data-y="-800" data-rotate="20" data-scale="20">
+        <p><strong>Creativity</strong> is in the big picture</p>
+    </div>
+
+    <div id="conclusion2" class="step" data-x="10500" data-y="-2000" data-rotate="110" data-scale="1">
+        <p><strong>Usability</strong> is in the detail.</p>
+    </div>
+
+    <div id="overview" class="step" data-x="6000" data-y="1500" data-scale="20">
     </div>
 
 </div>
